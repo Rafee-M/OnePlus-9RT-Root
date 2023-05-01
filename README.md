@@ -70,9 +70,12 @@ _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastbo
 3. Type `fastboot flashing unlock`
 4. If it says "Waiting for Devices" go to [Requirements Step - 2](#requirements)
 5. On your phone a new screen will show up. 
-6. Press Volume down to select "UNLOCK THE BOOTLOADER" option
+6. Press Volume down to select the "UNLOCK THE BOOTLOADER" option
 7. Press the power button to select it
 8. You should get a message saying that the bootloader's unlocked. Wait for the device to boot.
+
+
+Congragulations! You now have an unlocked bootloader!
 
 ## TYPO3 Setup
 
