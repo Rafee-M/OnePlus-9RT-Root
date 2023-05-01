@@ -1,5 +1,5 @@
 <a href="https://aimeos.org/">
-    <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/android-root.png" alt="Aimeos logo" title="Aimeos" align="right" height="140" />
+    <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/android-root.png" align="right" height="140" />
 </a>
 
 # OnePlus 9RT Root Guide
@@ -9,8 +9,8 @@ This guide contains all the steps to root your OnePlus 9RT and unlock it's poten
 
 - [Bootloader Unlock](hbootloader-unlock)
     - [Requirements](#requirements)
-    - [DDev or Colima](#ddev)
-    - [TER](#ter-extension)
+    - [Setting up adb](#ddev)
+    - [Setting up adb](#ter-extension)
 - [TYPO3 setup](#typo3-setup)
     - [Database setup](#database-setup)
     - [Security](#security)
@@ -26,101 +26,28 @@ This guide contains all the steps to root your OnePlus 9RT and unlock it's poten
 
 ## Bootloader Unlock
 
-This document is for the latest Aimeos TYPO3 **22.10 release and later**.
+We will have to unlock the bootloader of the phone, only then we can proceed to rooting it.
 
-- stable release: 23.04 (TYPO3 12 LTS)
-- LTS release: 22.10 (TYPO3 11 LTS)
+**WARNNG:** This will DELETE ALL THE DATA from your phone, so create a backup of anything important
 
 ### Requirements
 
-**Note:** composer 2.1+ is required!
+Download the following items: <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/windows-update.png" align="right" height="360"/>
 
-The latest TYPO3 version can be installed via composer. This is especially useful, if you want to create new TYPO3 installations automatically or play with the latest code. You need to install the composer package first, if it isn't already available:
+1. [SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools) 
 
-```bash
-php -r "readfile('https://getcomposer.org/installer');" | php -- --filename=composer
-```
+2. Other hardware - Android Bootloader Interface from Windows Update -> Optional Updates -> Driver Updates
 
-To install the TYPO3 base distribution first, execute this command:
+### Setting Up Your Phone
 
-```bash
-composer create-project typo3/cms-base-distribution myshop
-# or install a specific TYPO3 version:
-composer create-project "typo3/cms-base-distribution:^12" myshop
-```
 
-It will install TYPO3 into the `./myshop/` directory. Change into the directory and install TYPO3 as usual:
 
-```bash
-cd ./myshop
-touch public/FIRST_INSTALL
-```
 
-Open the TYPO3 URL in your browser and follow the setup steps. Afterwards, install the Aimeos extension using:
 
-```bash
-composer req aimeos/aimeos-typo3:~23.4
-```
+### Setting up adb
 
-If composer complains that one or more packages can't be installed because the required minimum stability isn't met, add this to your `composer.json`:
-
-```json
-"minimum-stability": "dev",
-"prefer-stable": true,
-```
-
-If you want a more or less working installation out of the box for new installations, you can install the Bootstrap package too:
-
-```bash
-composer req bk2k/bootstrap-package
-```
-
-***Note***: Remember to create a root page and a root template, which includes the Bootstrap package templates! (See also below.)
-
-Finally, depending on your TYPO3 version, run the following commands from your installation directory:
-
-**For TYPO3 11:**
-
-```bash
-php ./vendor/bin/typo3 extension:setup
-php ./vendor/bin/typo3 aimeos:setup --option=setup/default/demo:1
-```
-
-If you don't want to add the Aimeos demo data, you should remove `--option=setup/default/demo:1` from the Aimeos setup command.
-
-**For TYPO3 10:**
-
-```bash
-php ./vendor/bin/typo3 extension:activate scheduler
-php ./vendor/bin/typo3 extension:activate aimeos
-```
-
-If you experience any errors with the database, please check the [Database Setup](#database-setup) section below.
-
-Please keep on reading below the "TER Extension" installation section!
-
-### DDev
-
-*Note:* Installation instructions for TYPO3 with `ddev` or `Colima` can be found here:
-[TYPO3 with ddev or colima](https://ddev.readthedocs.io/en/latest/users/quickstart/)
-
-### TER Extension
-
-If you want to install Aimeos into a traditionally installed TYPO3 ("legacy installation"), the [Aimeos extension from the TER](https://typo3.org/extensions/repository/view/aimeos) is recommended. You can download and install it directly from the Extension Manager of your TYPO3 instance.
-
-* Log into the TYPO3 backend
-* Click on "Admin Tools::Extensions" in the left navigation
-* Click the icon with the little plus sign left from the Aimeos list entry
-
-![Install Aimeos TYPO3 extension](https://user-images.githubusercontent.com/213803/211545083-d0820b63-26f2-453e-877f-ecd5ec128713.jpg)
-
-Afterwards, you have to execute the update script of the extension to create the required database structure:
-
-* Click on "Admin Tools::Upgrade"
-* Click "Run Upgrade Wizard" in the "Upgrade Wizard" tile
-* Click "Execute"
-
-![Execute update script](https://user-images.githubusercontent.com/213803/211545122-8fd94abd-78b2-47ad-ad3c-1ef1b9c052b4.jpg)
+1. In the address bar of in file explorer, type `cmd`
+2. In the command prompmt 
 
 #### Aimeos Distribution
 
