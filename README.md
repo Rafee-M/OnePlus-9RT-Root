@@ -25,7 +25,7 @@ This guide contains all the steps to root your OnePlus 9RT and unlock it's poten
 - [License](#license)
 - [Links](#links)
 
-## Bootloader Unlock
+## 🟠 Bootloader Unlock
 
 We will have to unlock the bootloader of the phone, only then we can proceed to rooting it.
 
