@@ -9,8 +9,8 @@ This guide contains all the steps to root your OnePlus 9RT and unlock it's poten
 
 - [Bootloader Unlock](bootloader-unlock)
     - [Requirements](#requirements)
-    - [Setting up adb](#ddev)
-    - [Setting up adb](#ter-extension)
+    - [Setting Up Your Phone](#setting-up-your-phone)
+    - [Setting Up ADB](#setting-up-adb)
     - [Fastboot](#fastboot)
 - [TYPO3 setup](#typo3-setup)
     - [Database setup](#database-setup)
@@ -54,25 +54,27 @@ _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastbo
 - Find and enable USB Debugging
 - Find and enable OEM Unlock
 
-### Setting up adb
+### Setting Up ADB
 
 1. Connect your phone to the computer
 2. Go to the SDK Platform Tools folder and in the address bar type "cmd"
 3. In the command prompmt type `adb devices`
 4. Open your phone and press allow on the USB Debugging prompt and it should look like this now 
 
-<img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/adb-devices.png">
+<img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/adb-devices.png" width="500">
 
-### Fastboot
+### Fastboot <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/fasboot-menu.png" height="260" align="right">
 
-1. To go into Fastboot mode type in the same cmd promt `adb reboot bootloader`
+1. To go into Fastboot mode type in the same cmd promt `adb reboot bootloader`  
 2. You should see your phone go into a different menu
 3. Type `fastboot flashing unlock`
 4. If it says "Waiting for Devices" go to [Requirements Step - 2](#requirements)
 5. On your phone a new screen will show up. 
-6. Press Volume down to select "UNLOCK THE BOOTLOADER" option and press the power button to select it
+6. Press Volume down to select "UNLOCK THE BOOTLOADER" option
+7. Press the power button to select it
+8. You should get a message saying that the bootloader's unlocked. Wait for the device to boot.
 
-<img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/fasboot-mode.png">
+
 
 For new TYPO3 installations, there is a 1-click [Aimeos distribution](https://typo3.org/extensions/repository/view/aimeos_dist) available, too. Choose the Aimeos distribution from the list of available distributions in the Extension Manager and you will get a completely set up shop system including demo data for a quick start.
 
