@@ -7,10 +7,11 @@ This guide contains all the steps to root your OnePlus 9RT and unlock it's poten
 
 ## Table Of Content
 
-- [Bootloader Unlock](hbootloader-unlock)
+- [Bootloader Unlock](bootloader-unlock)
     - [Requirements](#requirements)
     - [Setting up adb](#ddev)
     - [Setting up adb](#ter-extension)
+    - [Fasboot](#fastboot)
 - [TYPO3 setup](#typo3-setup)
     - [Database setup](#database-setup)
     - [Security](#security)
@@ -36,20 +37,37 @@ Download the following items: <img src="https://github.com/Rafee-M/OnePlus-9RT-R
 
 1. [SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools) 
 
-2. Other hardware - Android Bootloader Interface from Windows Update -> Optional Updates -> Driver Updates
+2. Android Bootloader Interface from Windows Update -> Optional Updates -> Driver Updates
+_Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastboot)
 
 ### Setting Up Your Phone
 
+1. Enabling Developer Options:
+- Go to Settings
+- Go to About Phone
+- Go to Version
+- Tap on Build Number 8 times
 
-
-
+2. OEM Unlock and USB Debugging:
+- Go to Additional Settings
+- Go to Developer Option
+- Find and enable USB Debugging
+- Find and enable OEM Unlock
 
 ### Setting up adb
 
-1. In the address bar of in file explorer, type `cmd`
-2. In the command prompmt 
+1. Connect your phone to the computer
+2. Go to the SDK Platform Tools folder and in the address bar type "cmd"
+3. In the command prompmt type `adb devices`
+4. Open your phone and press allow on the USB Debugging prompt and it should look like this now 
 
-#### Aimeos Distribution
+<img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/adb-devices.png">
+
+### Fasboot
+
+1. To go into Fastboot mode type in the same cmd promt `adb reboot bootloader`
+2. You should see your phone go into a different menu
+3. 
 
 For new TYPO3 installations, there is a 1-click [Aimeos distribution](https://typo3.org/extensions/repository/view/aimeos_dist) available, too. Choose the Aimeos distribution from the list of available distributions in the Extension Manager and you will get a completely set up shop system including demo data for a quick start.
 
