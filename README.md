@@ -67,7 +67,8 @@ _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastbo
 
 1. To go into Fastboot mode type in the same cmd promt `adb reboot bootloader`
 2. You should see your phone go into a different menu
-3. 
+3. Type `fastboot flashing unlock`
+4. If it says "Waiting for Devices" go to [Requirements Step - 2](#requirements)
 
 For new TYPO3 installations, there is a 1-click [Aimeos distribution](https://typo3.org/extensions/repository/view/aimeos_dist) available, too. Choose the Aimeos distribution from the list of available distributions in the Extension Manager and you will get a completely set up shop system including demo data for a quick start.
 
