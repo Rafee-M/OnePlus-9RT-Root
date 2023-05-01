@@ -2,7 +2,7 @@
     <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/android-root.png" align="right" height="140" />
 </a>
 
-# OnePlus 9RT Root Guide
+# :star: OnePlus 9RT Root Guide
 This guide contains all the steps to root your OnePlus 9RT and unlock it's potential!
 
 ## Table Of Content
