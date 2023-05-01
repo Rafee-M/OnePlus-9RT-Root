@@ -11,7 +11,7 @@ This guide contains all the steps to root your OnePlus 9RT and unlock it's poten
     - [Requirements](#requirements)
     - [Setting up adb](#ddev)
     - [Setting up adb](#ter-extension)
-    - [Fasboot](#fastboot)
+    - [Fastboot](#fastboot)
 - [TYPO3 setup](#typo3-setup)
     - [Database setup](#database-setup)
     - [Security](#security)
@@ -63,7 +63,7 @@ _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastbo
 
 <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/adb-devices.png">
 
-### Fasboot
+### Fastboot
 
 1. To go into Fastboot mode type in the same cmd promt `adb reboot bootloader`
 2. You should see your phone go into a different menu
