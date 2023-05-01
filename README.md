@@ -31,7 +31,7 @@ We will have to unlock the bootloader of the phone, only then we can proceed to 
 
 **WARNNG:** This will DELETE ALL THE DATA from your phone, so create a backup of anything important
 
-### Requirements
+### <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/square-heading.png" height="11"> Requirements
 
 Download the following items: <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/windows-update.png" align="right" height="360"/>
 
@@ -40,7 +40,7 @@ Download the following items: <img src="https://github.com/Rafee-M/OnePlus-9RT-R
 2. Android Bootloader Interface from Windows Update -> Optional Updates -> Driver Updates
 _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastboot)
 
-### Setting Up Your Phone
+### <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/square-heading.png" height="11"> Setting Up Your Phone
 
 1. Enabling Developer Options:
 - Go to Settings
@@ -54,7 +54,7 @@ _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastbo
 - Find and enable USB Debugging
 - Find and enable OEM Unlock
 
-### Setting Up ADB
+### <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/square-heading.png" height="11"> Setting Up ADB
 
 1. Connect your phone to the computer
 2. Go to the SDK Platform Tools folder and in the address bar type "cmd"
@@ -63,7 +63,7 @@ _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastbo
 
 <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/adb-devices.png" width="500">
 
-### Fastboot <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/fasboot-menu.png" height="260" align="right">
+### <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/square-heading.png" height="11"> Fastboot <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/fasboot-menu.png" height="260" align="right">
 
 1. To go into Fastboot mode type in the same cmd promt `adb reboot bootloader`  
 2. You should see your phone go into a different menu
