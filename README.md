@@ -74,10 +74,6 @@ _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastbo
 7. Press the power button to select it
 8. You should get a message saying that the bootloader's unlocked. Wait for the device to boot.
 
-
-
-For new TYPO3 installations, there is a 1-click [Aimeos distribution](https://typo3.org/extensions/repository/view/aimeos_dist) available, too. Choose the Aimeos distribution from the list of available distributions in the Extension Manager and you will get a completely set up shop system including demo data for a quick start.
-
 ## TYPO3 Setup
 
 Setup TYPO3 by creating a `FIRST_INSTALL` file in the `./public` directory:
