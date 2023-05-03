@@ -8,10 +8,10 @@ This guide contains all the steps to root your OnePlus 9RT and unlock it's poten
 ## Table Of Content
 
 - [Bootloader Unlock](bootloader-unlock)
-    - [Requirements](#requirements)
-    - [Setting Up Your Phone](#setting-up-your-phone)
-    - [Setting Up ADB](#setting-up-adb)
-    - [Fastboot](#fastboot-)
+    - [Requirements](#-requirements)
+    - [Setting Up Your Phone](#-setting-up-your-phone)
+    - [Setting Up ADB](#-setting-up-adb)
+    - [Fastboot](#-fastboot-)
 - [TYPO3 setup](#typo3-setup)
     - [Database setup](#database-setup)
     - [Security](#security)
