@@ -12,8 +12,8 @@ This guide contains all the steps to root your OnePlus 9RT and unlock it's poten
     - [Setting Up Your Phone](#-setting-up-your-phone)
     - [Setting Up ADB](#-setting-up-adb)
     - [Fastboot](#-fastboot-)
-- [TYPO3 setup](#typo3-setup)
-    - [Database setup](#database-setup)
+- [Rooting](#typo3-setup)
+    - [Patching Boot Image](#-patching-boot-image)
     - [Security](#security)
 - [Page setup](#page-setup)
     - [Download the Aimeos Page Tree t3d file](#download-the-aimeos-page-tree-t3d-file)
@@ -77,39 +77,13 @@ _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastbo
 
 Congragulations! You now have an unlocked bootloader!
 
-## TYPO3 Setup
+## Rooting
 
-Setup TYPO3 by creating a `FIRST_INSTALL` file in the `./public` directory:
+Now we proceed to rooting the phone with Magisk
 
-```bash
-touch public/FIRST_INSTALL
-```
+### <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/square-heading.png" height="11"> Patching Boot Image
 
-Open the URL of your installation in the browser and follow the steps in the TYPO3 setup scripts.
-
-### Database Setup
-
-If you use MySQL < 5.7.8, you have to use `utf8` and `utf8_unicode_ci` instead because those MySQL versions can't handle the long indexes created by `utf8mb4` (up to four bytes per character) and you will get errors like
-
-```
-1071 Specified key was too long; max key length is 767 bytes
-```
-
-To avoid that, change your database settings in your `./typo3conf/LocalConfiguration.php` to:
-
-```php
-    'DB' => [
-        'Connections' => [
-            'Default' => [
-                'tableoptions' => [
-                    'charset' => 'utf8',
-                    'collate' => 'utf8_unicode_ci',
-                ],
-                // ...
-            ],
-        ],
-    ],
-```
+1. 
 
 ### Security
 
