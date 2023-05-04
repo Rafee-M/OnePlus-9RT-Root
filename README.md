@@ -33,7 +33,7 @@ We will have to unlock the bootloader of the phone, only then we can proceed to 
 
 ### <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/square-heading.png" height="11"> Requirements
 
-Download the following items: <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/windows-update.png" align="right" height="360"/>
+Download the following items: <img src="https://github.com/Rafee-M/OnePlus-9RT-Root/blob/main/images/windows-update-additional.png" align="right" height="160"/>
 
 1. [SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools) 
 
