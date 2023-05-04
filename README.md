@@ -77,7 +77,7 @@ _Note:_ You will find this update when you're at the [Fastboot Step - 2](#fastbo
 
 Congragulations! You now have an unlocked bootloader!
 
-## Rooting
+## 🟠 Rooting
 
 Now we proceed to rooting the phone with Magisk
 
